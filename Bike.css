@@ -1,0 +1,90 @@
+/* Custom CSS for Bike Page */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.dashbox {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 250px; /* Reduced height */
+}
+
+
+.dashbox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.dashbox-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /*border-radius: 10px;
+    transition: all 0.3s ease;*/
+}
+
+
+.dashbox-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+
+.dashbox:hover .dashbox-overlay {
+    opacity: 1;
+}
+
+
+.company-name {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.company-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.company-link:hover .dashbox {
+    transform: scale(1.05);
+}
+
+
+/* Animation */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

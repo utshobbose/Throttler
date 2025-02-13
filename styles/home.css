@@ -1,0 +1,62 @@
+/* Custom CSS for Home Page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashbox {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff; /* Text color changed to black */
+    border: 5px solid #fdf8f8; /* Black border */
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    padding: 20px; /* Increased padding for better spacing */
+    height: 240px; /* Increased height for better visibility */
+}
+
+.dashbox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgb(250, 237, 237); /* Enhanced box shadow on hover */
+}
+
+.dashbox img {
+    width: 100%; /* Full width image */
+    height: auto;
+    max-height: 160px; /* Reduced maximum height */
+    margin-bottom: 20px; /* Increased space between image and text */
+}
+
+.dashbox h3 {
+    margin: 0;
+    font-size: 24px; /* Increased font size for better readability */
+    font-weight: bold; /* Bold font weight */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-4 {
+    flex: 0 0 calc(33.3333% - 20px);
+    max-width: calc(33.3333% - 20px);
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}

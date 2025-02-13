@@ -1,0 +1,76 @@
+/* Custom CSS for Models Page */
+
+
+/* Ensure all images maintain aspect ratio */
+.company-img,
+.model-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+}
+
+
+/* Style for model details */
+.model-details {
+    background-color: #f9f9f9; /* Light background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+
+/* Adjust margin and font size for paragraph elements */
+.model-details p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+
+/* Style for strong tags within paragraphs */
+.model-details p strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+
+/* Center align company image */
+.company-img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Ensure consistent height for all dashboxes */
+.dashbox {
+    height: 300px; /* Adjust as needed */
+}
+
+
+/* Center align text in dashbox overlay */
+.dashbox-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Style for company name */
+.company-name {
+    margin: 0;
+    font-size: 20px; /* Increase font size */
+    font-weight: bold;
+    color: #333; /* Darker text color */
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* Style for hover effect */
+.company-link:hover .dashbox {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+

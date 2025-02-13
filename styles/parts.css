@@ -1,0 +1,30 @@
+/* Custom CSS for parts Page */
+
+/* Ensure all images maintain aspect ratio */
+.part-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Limit the maximum height of images */
+    margin-bottom: 20px;
+}
+
+/* Style for part details */
+.part-details {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+/* Adjust margin and font size for paragraph elements */
+.part-details p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Style for strong tags within paragraphs */
+.part-details p strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
